@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+
+    <div class="overlay">
+        <div class="modal">
+            <p class="text">You win!</p>
+            <p class="tip">Refresh to start again!</p>
+        </div>
+    </div>
+<main>
+    <div class="container">
+        <div class="player">
+            <h1 class="namePlayer">PLAYER</h1>
+            <h1 class="scorePlayer">0</h1>
+            <div class="result">
+                <p class="yourChoice"><span>👨</span></p>
+            </div>
+            <div class="btns">
+                <button class="item" onclick="chooseRock()">🗿</button>
+                <button class="item" onclick="choosePaper()">📝</button>
+                <button class="item" onclick="chooseScissors()">✂️</button>
+            </div>
+        </div>
+        <div class="computer">
+            <h1 class="nameCom">COMPUTER</h1>
+            <h1 class="scoreCom">0</h1>
+            <div class="result">
+                <p class="comChoice"><span>💻</span></p>
+            </div>
+            <div class="nextRound">
+                <button class="playButton" onclick="start()">PLAY</button>
+                <button class="resetButton" onclick="reset()">NEXT ROUND</button>
+            </div>
+        </div>
+    </div>
+</main>
+    <script src="/script.js"></script>
+</body>
+</html>

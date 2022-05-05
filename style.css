@@ -1,0 +1,226 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik&display=swap');
+
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: 'Rubik', sans-serif;
+    }
+
+    main {
+        height: 100vh;
+        background-image: linear-gradient( 109.6deg, #28313B, #485461);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .container {
+        border: 0px solid rgb(255, 255, 255);
+        border-radius: 10px;
+        display: flex;
+        height: 600px;
+        width: 900px;
+        background-color: #191c1fc2;
+        box-shadow: rgba(255, 235, 53, 0.644) 0px 0px 20px 1px;
+        transition: 0.5s;
+    }
+
+    .player {
+        height: 100%;
+        width: 50%;
+        transition: 0.5;
+    }
+
+    .computer {
+        height: 100%;
+        width: 50%;
+        transition: 0.5;
+    }
+
+    .namePlayer {
+        color: gold;
+        text-align: center;
+        padding-top: 40px;
+    }
+    .nameCom {
+        color: gold;
+        text-align: center;
+        padding-top: 40px;
+    }
+
+    .result {
+        color: white;
+        justify-content: center;
+        align-items: center;
+        display: flex;
+        height: 180px;
+        margin-top: 20px;
+        margin-left: 135px;
+        width: 180px;
+        background-color: rgb(255, 255, 255);
+        border-radius: 50%;
+        box-shadow: rgba(255, 235, 53, 0.644) 0px 0px 20px 1px;
+    }
+
+    p {
+        font-size: 50px;
+    }
+
+    .btns {
+        justify-content:space-around;
+        align-items: center;
+        display: flex;
+        height: 200px;
+    }
+
+    .item {
+        cursor: pointer;
+        border: 0px solid rgb(0, 0, 0);
+        border-radius: 50%;
+        background-color: rgb(255, 255, 255);
+        box-shadow: rgba(211, 214, 32, 0.897) 0px 0px 10px 1px;
+        font-size: 70px;
+        height: 120px;
+        width: 120px;
+    }
+
+    .play {
+        height: 100px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .playButton {
+        cursor: pointer;
+        border: 0px solid rgb(0, 0, 0);
+        border-radius: 50%;
+        background-color: rgb(255, 255, 255);
+        box-shadow: rgba(211, 214, 32, 0.897) 0px 0px 10px 1px;
+        font-size: 40px;
+        margin-right: 50px;
+        height: 150px;
+        width: 150px;
+    }
+
+    .nextRound {
+        height: 200px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .resetButton {
+        cursor: pointer;
+        border: 0px solid rgb(0, 0, 0);
+        border-radius: 50%;
+        background-color: #ffffff;
+        box-shadow: rgb(211, 214, 32) 0px 0px 10px 1px;
+        font-size: 30px;
+        height: 150px;
+        width: 150px;
+    }
+
+    span {
+        font-size: 90px;
+    }
+
+    .loserTitle {
+        color: white;
+        transition: 0.5s;
+    }
+
+    .loserTitleScore {
+        color: white;
+        transition: 0.5s;
+    }
+
+    .winnerTitle {
+        color: white;
+        transition: 0.5s;
+    }
+
+    .winnerTitleScore {
+        color: white;
+        transition: 0.5s;
+    }
+
+    .scorePlayer {
+        font-size: 50px;
+        color:  white;
+        text-align: center;
+        margin-top: 30px;
+    }
+
+    .winner {
+        background-color: rgba(156, 152, 31, 0.795);
+        box-shadow: rgb(190, 202, 22) 0px 0px 30px 3px;
+        transition: 0.5s;
+    }
+
+    .loser {
+        background-color: rgb(39, 39, 34);
+        box-shadow: rgb(210, 221, 57) 0px 0px 30px 3px;
+        transition: 0.5s;
+    
+    }
+
+    .draw {
+        background-color: rgba(88, 41, 32, 0.692);
+        box-shadow: rgb(192, 55, 55) 0px 0px 30px 3px;
+        transition: 0.5s;
+    }
+
+    .scoreCom {
+        font-size: 50px;
+        color:  white;
+        text-align: center;
+        margin-top: 30px;
+    }
+
+    .yourChoice {
+        text-align: center;
+        
+    }
+
+    .overlay {
+        display: none;
+        position: fixed;
+        top:0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        z-index: 1;
+        background-color: rgba(0, 0, 0, 0.425);
+    }
+    .modal {
+        border: 5px solid gold;
+        border-radius: 20px;
+        width: 600px;
+        height: 300px;
+        margin: auto;
+        background-color: rgb(49, 44, 44);
+        box-shadow: rgb(210, 221, 57) 0px 0px 30px 3px;
+        position: absolute;
+        top:0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+    }
+
+    .show {
+        display: inline-block;
+    }
+
+    .text {
+        color: gold;
+        text-align: center;
+        margin-top: 90px;
+    }
+    .tip {
+        color: white;
+        margin-top: 20px;
+        text-align: center;
+        font-size: 30px;
+    }
